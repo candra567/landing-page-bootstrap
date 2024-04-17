@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+      }
+      .nav-title {
+        font-size: 1.3em;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .thumbnail-course img {
+        width: 100%;
+        height: 500px;
+      }
+      .card-review {
+        min-height: 150px;
+        align-items: center;
+      }
+      .card-review img {
+        margin-right: 20px;
+      }
+      @media screen and (max-width: 768px) {
+        .thumbnail-course img {
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-success">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white nav-title" href="#">Bootcamp id</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end pe-5"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-5">
+          <div class="p-2  border mt-5 bg-primary">
+            <a href="/" class="text-white"
+              ><i class="bi bi-arrow-left-square"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-12 my-3">
+          <div class="card thumbnail-course">
+            <img src="img/java.jpg" alt="" />
+            <div class="card-body">
+              <p class="fs-4 fw-bold">Belajar java dari pemula sampai mahir</p>
+              <p>
+                <i class="bi bi-person-bounding-box pe-3"></i>Pengajar Prof Adam
+                smith
+              </p>
+              <p><i class="bi bi-stopwatch pe-3"></i>Total durasi 4.5 jam</p>
+              <p><i class="bi bi-file pe-3"></i>Sertifikasi (yes)</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus sed vero culpa nihil rerum perspiciatis placeat
+                non vel illum, repudiandae harum fuga saepe praesentium hic
+                quasi. Consequuntur, sed. Libero, dolore. Placeat odio
+                necessitatibus eveniet autem harum quis repellat minima. Nobis,
+                eos placeat? Quia, alias. Sunt praesentium accusamus odio qui
+                dolores dolorum ex. Nemo harum commodi recusandae libero
+                molestiae perspiciatis, veritatis quisquam ex voluptatibus
+                aliquam repudiandae labore aperiam, minima vel, architecto
+                suscipit saepe optio rem ullam eius quasi? Amet velit culpa
+                illum quam. Quisquam voluptatem consectetur, soluta deserunt
+                rerum repellat. Iste dicta deserunt mollitia? Optio consectetur
+                aliquam nisi et porro soluta, veritatis modi harum quos aut
+                culpa praesentium fugiat laudantium vel eum minus. Magnam
+                reiciendis recusandae iure excepturi amet eum voluptatem quidem
+                totam aspernatur soluta expedita quia facere saepe, quos aut.
+                Eius fugit ullam iusto magni omnis nesciunt consequatur ut sunt
+                tempore, quaerat quisquam ipsa velit nemo aliquam ex, et,
+                explicabo laboriosam at. Ad reiciendis velit mollitia obcaecati
+                suscipit debitis voluptatum cum, explicabo distinctio nisi
+                excepturi nemo accusamus?
+              </p>
+              <p>Timestamp</p>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <span class="text-primary px-4">0.15</span><span>Intro</span>
+                </li>
+                <li class="list-group-item">
+                  <span class="text-primary px-4">1.15</span
+                  ><span>Instalasi java dan jdk</span>
+                </li>
+                <li class="list-group-item">
+                  <span class="text-primary px-4">3.15</span
+                  ><span>Hello world java</span>
+                </li>
+                <li class="list-group-item">
+                  <span class="text-primary px-4">15.15</span><span>More</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 p-2">
+        <p class="fs-4">Ulasan</p>
+        <div class="col-12  my-2 border d-flex card-review">
+          <img
+            src="img/adam.jpg"
+            alt=""
+            width="100px"
+            height="100px"
+            class="rounded-circle"
+          />
+          <div class="p-2 card-review-ulasan">
+            <p class="fw-bold">Adam</p>
+            <p>Ulasan</p>
+            <small
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, mollitia beatae! Quisquam, dolorum incidunt voluptates
+              totam rerum nisi quaerat ipsa.</small
+            >
+          </div>
+        </div>
+        <div class="col-12 my-2 border d-flex card-review">
+          <img
+            src="img/sarah.jpg"
+            alt=""
+            width="100px"
+            height="100px"
+            class="rounded-circle"
+          />
+          <div class="p-2 card-review-ulasan">
+            <p class="fw-bold">Sarah</p>
+            <p>Ulasan</p>
+            <small
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, mollitia beatae! Quisquam, dolorum incidunt voluptates
+              totam rerum nisi quaerat ipsa.</small
+            >
+          </div>
+        </div>
+        <div class="col-12 my-2 border d-flex card-review">
+          <img
+            src="img/mikail.jpg"
+            alt=""
+            width="100px"
+            height="100px"
+            class="rounded-circle"
+          />
+          <div class="p-2 card-review-ulasan">
+            <p>Mikail</p>
+            <p>Ulasan</p>
+            <small
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, mollitia beatae! Quisquam, dolorum incidunt voluptates
+              totam rerum nisi quaerat ipsa.</small
+            >
+          </div>
+        </div>
+        <div class="col-12 my-2 border d-flex card-review">
+          <img
+            src="img/laurel.jpg"
+            alt=""
+            width="100px"
+            height="100px"
+            class="rounded-circle"
+          />
+          <div class="p-2 card-review-ulasan">
+            <p>Laurel</p>
+            <p>Ulasan</p>
+            <small
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, mollitia beatae! Quisquam, dolorum incidunt voluptates
+              totam rerum nisi quaerat ipsa.</small
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid">
+      <div class="row p-3 bg-dark">
+        <p class="text-white fs-4">Bootcamp id</p>
+        <p class="text-white">Bootcamp id adalah sebuah platform yang menyediakan e-course  di bidang software engginer dengan menyajikan berbagai macam konten pembelajaran seputar teknologi </p>
+        <p class="text-center my-4 text-white">Copyright @ 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
